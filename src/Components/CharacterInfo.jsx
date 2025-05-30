@@ -9,7 +9,7 @@ export function CharacterInfo({ name, status, gender, imageUrl, species, locatio
     return (
     <div className="character-info">
       <button className="close-button" onClick={onClick}>
-        <img src="/public/close-icon.svg"/>
+        <img src="/close-icon.svg"/>
       </button>
       <img src={imageUrl} alt={name} />
       <div className="character-data">
