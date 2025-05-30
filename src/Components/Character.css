@@ -6,12 +6,15 @@
 }
 .character{
   margin: 30px;
-  width: 400px;
+  width: 425px;
   height: 230px;
   display: flex;
   align-items: center;
   border-radius: 20px;
-  background-color: #2c2c2c;
+  background: 
+        linear-gradient(rgba(30,30,30,0.92), rgba(30,30,30,0.92)),
+        url('/public/rickyymorty2.jpg') center/cover no-repeat;
+    
    box-shadow: 0 8px 24px 0 rgba(0,0,0,0.3);
 }
 .character div{
@@ -31,16 +34,16 @@
   border-radius:10px 0px 0px 10px;
   object-fit: cover;
 }
-.character span{
-  color:#adadad
-}
-.character-location{
-  font-size: 1.1rem;
-}
+
 .character:hover{
     cursor: pointer;
-    scale: 0.9;
+    transform: perspective(1000px) rotateY(15deg);   
+    transition: transform 0.3s ease-in-out;
 }
 .character-data{
     padding-right: 10px;
+}
+
+.character-location{
+  font-size: 1.1rem;
 }

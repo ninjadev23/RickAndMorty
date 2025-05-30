@@ -46,3 +46,26 @@ h1{
   font-size: 1.2rem;
   justify-content: center;
 }
+span{
+  color:#adadad
+}
+.modal-open:hover {
+  pointer-events: none;
+  transform: none;
+  cursor: default;
+  transition: none;
+  filter: grayscale(0.7) blur(1px); /* Opcional */
+}
+footer{
+  text-align: center;
+}
+footer a{
+  color: #39e639;
+  text-decoration: none;
+}
+footer{
+  background: 
+        linear-gradient(rgba(30,30,30,0.92), rgba(30,30,30,0.92)),
+        url('/public/rickyymorty2.jpg') center/cover no-repeat;;
+  margin-bottom: -20px;  
+}

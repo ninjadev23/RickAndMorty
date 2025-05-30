@@ -1,8 +1,8 @@
 import "./Character.css"
-export function Character({name, status, gender, imageUrl, species, location}){
+export function Character({name, status, gender, imageUrl, species, location, onClick, className}) {
     return (
-        <div className="character">
-            <img src={imageUrl} alt={name} />
+        <div onClick={onClick} className={className}>
+            <img src={imageUrl} alt={name}/>
             <div className="character-data">
                 <h2>{name}</h2>
                 <p><span>Status:</span> {status}</p>

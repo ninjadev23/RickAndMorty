@@ -1,0 +1,67 @@
+.character-info{
+    width:90%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: 
+        linear-gradient(rgba(30, 30, 30, 0.904), rgba(30, 30, 30, 0.897)),
+        url('/public/rickymorty1.jpg') center/cover no-repeat;
+    
+    border-radius: 10px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding:20px;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,0.7)
+}
+.character-info img{
+    height: 60%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+.episodes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    gap: 10px;
+}
+.episodes-container div{
+    background-color: #39e63985;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px){
+    .character-info{
+        width: 100%;
+        top:-100px;
+        height: 100%;
+    }
+    .episodes{
+        margin:0;
+    }
+    .character-info img{
+        width: 30%;
+    }
+}
+.close-button{
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(30,30,30,0.7);
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
