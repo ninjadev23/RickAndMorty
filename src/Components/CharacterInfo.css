@@ -1,4 +1,5 @@
 .character-info{
+    overflow:auto;
     width:90%;
     height: 70%;
     display: flex;
